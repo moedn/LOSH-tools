@@ -29,7 +29,7 @@ RDF_FILE_LOCAL = '../OSHI/osh-metadata.ttl'
 RDF_FILE_REMOTE = 'https://raw.githubusercontent.com/OPEN-NEXT/LOSH/master/osh-metadata.ttl'
 RDF_FILE = RDF_FILE_LOCAL if os.path.exists(RDF_FILE_LOCAL) else RDF_FILE_REMOTE
 BASE_URI = 'http://purl.org/oseg/ontologies/osh-metadata/0.1/base'
-RDF_TO_WB_LINK_FILE = 'tmp_ont2wb_links.ttl'
+RDF_TO_WB_LINK_FILE = 'ont2wb_links.ttl'
 
 
 def get_label_preds():
