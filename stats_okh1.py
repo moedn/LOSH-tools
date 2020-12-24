@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 '''
 Downloads the Open Know-How (OKH) meta-data files
 from the main list,

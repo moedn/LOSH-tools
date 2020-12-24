@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 '''
 Converts the OKH RDF Ontology into items and properties in a WikiBase instance.
 It reads input from an RDF(/Turtle) file,
