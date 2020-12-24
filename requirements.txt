@@ -1,4 +1,5 @@
 # Python dependencies
 click
 pyyaml
+rdflib
 urllib
