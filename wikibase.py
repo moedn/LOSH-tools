@@ -227,17 +227,18 @@ class WBSession:
         print(ans)
         return ans['entity']['id']
 
-    def create_wb_thing(self, item=True, labels={}, descriptions={}, claims={}) -> str:
+    def create_wb_thing(self, item=True, labels={}, descriptions={}, claims={}, property_type='string') -> str:
         '''
         Creates a WikiBase item or property,
         and returns its id (eg. "Q123456" or "P12345") if successful.
+        @param property_type see the list at: https://wikibase.oho.wiki/index.php?title=Special:NewProperty
         '''
         data = {
                 'labels': {},
                 'descriptions': {},
                 }
         if not item:
-            data['datatype'] = 'string' # TODO see the following list (extracted from: https://wikibase.oho.wiki/index.php?title=Special:NewProperty )
+            data['datatype'] = property_type # see the following list (extracted from: https://wikibase.oho.wiki/index.php?title=Special:NewProperty )
         for label_lang in labels.keys():
             if isinstance(labels[label_lang], list):
                 for i in range(0, len(labels[label_lang])):
