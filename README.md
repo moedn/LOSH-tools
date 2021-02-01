@@ -26,7 +26,7 @@ or to update it - just run it! :-)
 
 ### OKH YAML file statistics gatherer
 
-Gathers statistics about the keys used in a bunch of OKh yaml files.
+Gathers statistics about the keys used in a bunch of OKH TOML files.
 It can be run like this:
 
 ```bash
